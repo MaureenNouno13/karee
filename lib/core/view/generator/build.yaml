@@ -1,0 +1,14 @@
+targets:
+  $default:
+    builders:
+      view_reporter_generator|view_reporter:
+        enabled: true
+builders:
+  view_reporter:
+    target: ":view_reporter_generator"
+    import: "package:kari/core/view/generator/lib/builder.dart"
+    builder_factories: ["viewReporter"]
+    build_extensions: {".dart": [".view_reporter.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
