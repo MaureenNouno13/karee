@@ -42,7 +42,9 @@ final _data = <r.Reflectable, r.ReflectorData>{
               r'noSuchMethod': 0,
               r'hashCode': 1,
               r'runtimeType': 1,
-              r'index': 0
+              r'index': 0,
+              r'personnelService': 1,
+              r'personnelService=': 0
             })
       ],
       null,
@@ -55,9 +57,13 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r'noSuchMethod': (dynamic instance) => instance.noSuchMethod,
         r'hashCode': (dynamic instance) => instance.hashCode,
         r'runtimeType': (dynamic instance) => instance.runtimeType,
-        r'index': (dynamic instance) => instance.index
+        r'index': (dynamic instance) => instance.index,
+        r'personnelService': (dynamic instance) => instance.personnelService
       },
-      {},
+      {
+        r'personnelService=': (dynamic instance, value) =>
+            instance.personnelService = value
+      },
       null,
       [
         const [1, 0, null],
