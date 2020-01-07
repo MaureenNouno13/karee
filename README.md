@@ -1,6 +1,6 @@
-# kari
+# karee
 
-A new Flutter project.
+Karee MVC
 
 ## Getting Started
 
@@ -19,8 +19,4 @@ Before run
 
 1. flutter pub get
 
-2. flutter packages pub run build_runner build
-
-    en cas d'erreur ajouter le paramètre flutter packages pub run build_runner build --delete-conflicting-outputs
-
-3. flutter run
+2. karee run
