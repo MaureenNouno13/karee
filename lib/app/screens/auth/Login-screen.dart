@@ -15,9 +15,13 @@ class _LoginScreenState extends State<LoginScreen> {
    Widget build(BuildContext context) {
     dynamic args = ModalRoute.of(context).settings.arguments;
        return Scaffold(
-           body: Center(
-               child: Text("LoginScreen Works!!! :)\n\n${args[#nom]}")
-           )
+            appBar: AppBar(
+              title: Text(args[#title]),
+            ),
+            body: ListView.builder(
+              itemCount: args[#countries].length,
+              itemBuilder: (_, index) => Text(args[#countries][index]),
+            ),
        );
    }
 

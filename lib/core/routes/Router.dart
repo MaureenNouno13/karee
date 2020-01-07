@@ -47,6 +47,7 @@ enum RouteMode{
 
 class Router {
 
+  static cupertino.BuildContext context;
 
   static dynamic goto(String routeName, {cupertino.BuildContext context, RouteMode mode, dynamic parameter}) {
     dynamic action = Route.routeMap[routeName];
@@ -78,11 +79,9 @@ class Router {
   static get getRouter => (cupertino.RouteSettings rs)=>appRoute(rs);
 
   static cupertino.Route<dynamic> appRoute(cupertino.RouteSettings settings) {
-    try{
-      print("view to load = ${screens[settings.name]}");
+    try{ 
       return new RouteTransition(builder: (_)=>screens[settings.name], settings: settings);
     }catch(e){
-      print('No component for route ${settings.name}');
       return new RouteTransition(builder: (_){
         return cupertino.Center(
           child: cupertino.Text("No Route found")

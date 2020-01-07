@@ -2,11 +2,7 @@
 // https://github.com/dart-lang/reflectable.
 
 import 'dart:core';
-import 'package:kari/app/controllers/HomeController.dart' as prefix1;
-import 'package:kari/app/controllers/TotoController.dart' as prefix3;
-import 'package:kari/app/controllers/auth/LoginController.dart' as prefix2;
-import 'package:kari/app/controllers/settings/SettingsController.dart'
-    as prefix4;
+import 'package:kari/app/controllers/auth/LoginController.dart' as prefix1;
 import 'package:kari/core/controller/Controller.dart' as prefix0;
 
 // ignore_for_file: unnecessary_const
@@ -24,8 +20,8 @@ final _data = <r.Reflectable, r.ReflectorData>{
   const prefix0.Controller(): r.ReflectorData(
       <m.TypeMirror>[
         r.NonGenericClassMirrorImpl(
-            r'HomeController',
-            r'.HomeController',
+            r'LoginController',
+            r'.LoginController',
             7,
             0,
             const prefix0.Controller(),
@@ -35,123 +31,37 @@ final _data = <r.Reflectable, r.ReflectorData>{
             -1,
             {},
             {},
-            {r'': (b) => () => b ? prefix1.HomeController() : null},
+            {r'': (b) => () => b ? prefix1.LoginController() : null},
             -1,
             -1,
             const <int>[-1],
             null,
             {
-              r'==': 1,
-              r'toString': 0,
-              r'noSuchMethod': 1,
-              r'hashCode': 0,
-              r'runtimeType': 0,
-              r'test': 0
-            }),
-        r.NonGenericClassMirrorImpl(
-            r'LoginController',
-            r'.LoginController',
-            7,
-            1,
-            const prefix0.Controller(),
-            const <int>[-1],
-            null,
-            null,
-            -1,
-            {},
-            {},
-            {r'': (b) => () => b ? prefix2.LoginController() : null},
-            -1,
-            -1,
-            const <int>[-1],
-            null,
-            {
-              r'==': 1,
-              r'toString': 0,
-              r'noSuchMethod': 1,
-              r'hashCode': 0,
-              r'runtimeType': 0,
-              r'index': 1
-            }),
-        r.NonGenericClassMirrorImpl(
-            r'TotoController',
-            r'.TotoController',
-            7,
-            2,
-            const prefix0.Controller(),
-            const <int>[-1],
-            null,
-            null,
-            -1,
-            {},
-            {},
-            {r'': (b) => () => b ? prefix3.TotoController() : null},
-            -1,
-            -1,
-            const <int>[-1],
-            null,
-            {
-              r'==': 1,
-              r'toString': 0,
-              r'noSuchMethod': 1,
-              r'hashCode': 0,
-              r'runtimeType': 0,
-              r't2': 1
-            }),
-        r.NonGenericClassMirrorImpl(
-            r'SettingsController',
-            r'.SettingsController',
-            7,
-            3,
-            const prefix0.Controller(),
-            const <int>[-1],
-            null,
-            null,
-            -1,
-            {},
-            {},
-            {r'': (b) => () => b ? prefix4.SettingsController() : null},
-            -1,
-            -1,
-            const <int>[-1],
-            null,
-            {
-              r'==': 1,
-              r'toString': 0,
-              r'noSuchMethod': 1,
-              r'hashCode': 0,
-              r'runtimeType': 0,
-              r'index': 1,
-              r'loadProfile': 1,
-              r'loadPreference': 1
+              r'==': 0,
+              r'toString': 1,
+              r'noSuchMethod': 0,
+              r'hashCode': 1,
+              r'runtimeType': 1,
+              r'index': 0
             })
       ],
       null,
       null,
-      <Type>[
-        prefix1.HomeController,
-        prefix2.LoginController,
-        prefix3.TotoController,
-        prefix4.SettingsController
-      ],
-      4,
+      <Type>[prefix1.LoginController],
+      1,
       {
         r'==': (dynamic instance) => (x) => instance == x,
         r'toString': (dynamic instance) => instance.toString,
         r'noSuchMethod': (dynamic instance) => instance.noSuchMethod,
         r'hashCode': (dynamic instance) => instance.hashCode,
         r'runtimeType': (dynamic instance) => instance.runtimeType,
-        r'test': (dynamic instance) => instance.test,
-        r'index': (dynamic instance) => instance.index,
-        r't2': (dynamic instance) => instance.t2,
-        r'loadProfile': (dynamic instance) => instance.loadProfile,
-        r'loadPreference': (dynamic instance) => instance.loadPreference
+        r'index': (dynamic instance) => instance.index
       },
       {},
       null,
       [
-        const [0, 0, null],
-        const [1, 0, null]
+        const [1, 0, null],
+        const [0, 0, null]
       ])
 };
 
